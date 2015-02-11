@@ -1,0 +1,3 @@
+g++ -fPIC -shared type.cpp -o libtemplate.so
+g++ -fPIC -shared type1.cpp -o libtemplate1.so
+g++ main.cpp -L. -ltemplate  -ltemplate1 -o main
