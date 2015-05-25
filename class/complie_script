@@ -1,0 +1,2 @@
+g++ -fPIC -shared -fvisibility=hidden class_test.cpp -o libclass.so
+g++ main.cpp -L. -lclass  -o main
